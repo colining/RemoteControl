@@ -1,0 +1,68 @@
+
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fragmen_remote_control_tableLayout"
+    android:stretchColumns="*">
+
+    <TextView android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        android:text="0"
+        android:textSize="50dp"
+        android:id="@+id/control_selectedTextView" />
+
+
+    <TextView
+        android:id="@+id/control_workingTextView"
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="15dp"
+        android:background="#555555"
+        android:layout_gravity="center"
+        android:text="0"
+        android:textColor="#cccccc"
+        android:textSize="20dp"
+
+        />
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"></include>
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"></include>
+    <include
+        android:layout_weight="1"
+        layout="@layout/button_row"
+        ></include>
+    <include
+
+
+        android:layout_weight="1"
+        layout="@layout/new_button"
+
+        ></include>
+    <!--<TableRow android:layout_weight="1">-->
+        <!--<Button-->
+            <!--android:id="@+id/control_zerobutton"-->
+            <!--style="@style/RemoteButton"-->
+
+            <!--android:text="0"-->
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/control_onebutton"-->
+            <!--style="@style/RemoteButton"-->
+            <!--android:text="1"-->
+
+            <!--/>-->
+        <!--<Button-->
+            <!--android:id="@+id/control_enterbutton"-->
+            <!--style="@style/RemoteButton"-->
+            <!--android:text="Enter"-->
+            <!--/>-->
+    <!--</TableRow>-->
+
+
+</TableLayout>
